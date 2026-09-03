@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'PressStart2p-Regular';
+    src: url(../fuentes/PressStart2P-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 *{
     font-family: Bahnschrift, Arial, Serif;
 
@@ -12,7 +20,8 @@ body{
 }
 
 h1{
-    color: #0056b3;
+    font-family: "PressStart2p-Regular", "Copperplate Gothic Light", Serif;
+    font-weight: normal;
 }
 
 #formacion{
