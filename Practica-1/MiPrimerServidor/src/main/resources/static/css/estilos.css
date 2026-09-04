@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'PressStart2p-Regular';
+    src: url(../fuentes/PressStart2P-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    position: relative;
+    width: 55vw;
+    height: 100vh; /* Temporal, para cuando tenga el conteniod borrarlo para que se adapte a el*/
+    min-width: 800px;
+    display: flex;
+    justify-content: center;
+    background-color: white; /* Temporal, solo para poder ver que sean las dimensiones correctas*/
+    margin-top: 40px;
+}
+
+.contenedor-principal{
+    width: 100%;
+    max-width: 1100px;
+    background-color: black;
+    margin: 20px 20px 20px 20px; /*Temporal para ver bien el contenido*/
+}
+
+header{
+    min-height: 210px;
+    width: 100%;
+    background-color: #0056b3; /* Temporal para ver que esté correctamente ubicado*/
+}
+
+h1{
+    font-family: "PressStart2p-Regular", "Copperplate Gothic Light", Arial;
+    font-size: 40px;
+    font-weight: normal;
+    padding: 5px;
+    border: 2px dashed #4f46e5;
+    border-radius: 4px;
+    border-bottom: none;
+}
+
+a{
+    font-family: "PressStart2p-Regular", "Copperplate Gothic Light", Arial;
+    font-size: 13px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.contenedor-overlay{
+    margin-top: 160px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: flex-end;
+}
+
+nav{
+    border: 2px dashed #4f46e5;
+    border-bottom: none;
+    margin-left: 50px;
+    border-radius: 4px;
+}
