@@ -94,4 +94,16 @@ section{
     display: grid;
     grid-template-columns: 200px 1fr 200px;
     background-color: #eef2ff;
+    gap: 12px;
+}
+
+/* Temporal para ver como queda*/
+.sidebar-derecha, .sidebar-izquierda{
+    background-color: black;
+    height: 100px;
+}
+
+.contenido-principal{
+    height: 100px;
+    background-color: black;
 }
