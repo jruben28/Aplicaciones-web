@@ -92,18 +92,37 @@ section{
     padding: 12px;
     border: 2px dashed #4f46e5;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 210px 1fr 200px;
     background-color: #eef2ff;
     gap: 12px;
+    height: auto;
 }
 
-/* Temporal para ver como queda*/
 .sidebar-derecha, .sidebar-izquierda{
-    background-color: black;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
 }
 
 .contenido-principal{
-    height: 100px;
-    background-color: black;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.tarjeta-sidebar{
+    min-height: 200px;
+    background-color: #f5f3ff;
+    border: 2px solid #c4b5fd;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px #c7d2fe;
+}
+
+.tarjeta-principal{
+    min-height: 200px;
+    background-color: #f5f3ff;
+    border: 2px solid #c4b5fd;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px #c7d2fe;
 }
