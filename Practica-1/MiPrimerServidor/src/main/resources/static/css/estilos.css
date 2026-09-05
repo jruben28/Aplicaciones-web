@@ -8,6 +8,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -30,31 +31,31 @@ main{
     min-width: 800px;
     display: flex;
     justify-content: center;
-    background-color: white; /* Temporal, solo para poder ver que sean las dimensiones correctas*/
     margin-top: 40px;
 }
 
 .contenedor-principal{
     width: 100%;
     max-width: 1100px;
-    background-color: black;
-    margin: 20px 20px 20px 20px; /*Temporal para ver bien el contenido*/
 }
 
 header{
-    min-height: 210px;
+    min-height: 180px;
     width: 100%;
-    background-color: #0056b3; /* Temporal para ver que esté correctamente ubicado*/
+    border: 3px solid #4f46e5;
+    border-bottom: none;
+    border-radius: 8px 6px 0 0;
 }
 
 h1{
     font-family: "PressStart2p-Regular", "Copperplate Gothic Light", Arial;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: normal;
     padding: 5px;
     border: 2px dashed #4f46e5;
     border-radius: 4px;
     border-bottom: none;
+    background-color: #eef2ff;
 }
 
 a{
@@ -62,11 +63,16 @@ a{
     font-size: 13px;
     padding: 10px;
     text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+
+
 }
 
 .contenedor-overlay{
-    margin-top: 160px;
-    background-color: white;
+    margin-top: 130px;
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -78,4 +84,14 @@ nav{
     border-bottom: none;
     margin-left: 50px;
     border-radius: 4px;
+    padding-top: 5px;
+    background-color: #eef2ff;
+}
+
+section{
+    padding: 12px;
+    border: 2px dashed #4f46e5;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    background-color: #eef2ff;
 }
