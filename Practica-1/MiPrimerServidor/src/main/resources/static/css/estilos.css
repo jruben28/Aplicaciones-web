@@ -58,6 +58,7 @@ h1{
     font-family: "PressStart2p-Regular", "Copperplate Gothic Light", Arial;
     font-size: 38px;
     font-weight: normal;
+    color: #1e1b4b;
     padding: 5px;
     border: 2px dashed #4f46e5;
     border-radius: 4px;
@@ -71,6 +72,7 @@ a{
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
+    color: #1e1b4b;
 }
 
 a:hover{
@@ -121,7 +123,7 @@ section{
 .tarjeta-sidebar{
     min-height: 200px;
     background-color: #f5f3ff;
-    border: 2px solid #c4b5fd;
+    border: 2px solid #a78bfa;
     border-radius: 4px;
     box-shadow: 3px 3px 3px #c7d2fe;
 }
@@ -129,7 +131,58 @@ section{
 .tarjeta-principal{
     min-height: 200px;
     background-color: #f5f3ff;
-    border: 2px solid #c4b5fd;
+    border: 2px solid #ddd6fe;
     border-radius: 4px;
     box-shadow: 3px 3px 3px #c7d2fe;
+}
+
+.tarjeta-principal:hover{
+    border-color: #a78bfa;
+
+}
+
+.titulo-tarjeta-sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #c4b5fd;
+    font-family: "PressStart2p-Regular", Arial, serif;
+    color: #6b21a8;
+    font-size: 14px;
+}
+
+#imagen-yo{
+    width: 100%;
+}
+
+.titulo-nombre{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: PressStart2p-Regular, Arial, Serif;
+    font-size: 13px;
+    color: #6b21a8;
+
+}
+
+.tabla-info{
+    border-collapse: collapse;
+    font-family: Rubik-Regular;
+    font-size: 14px;
+    margin: 20px;
+    margin-top: 15px;
+}
+
+.tabla-info td{
+    padding: 6px 8px;
+    border-bottom: 1px dashed #a78bfa;
+}
+
+.tabla-info td:first-child{
+    color: #8b5cf6;
+}
+
+.tabla-info td:last-child{
+    color: #c084fc;
 }
