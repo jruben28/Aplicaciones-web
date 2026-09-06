@@ -53,9 +53,9 @@ header{
     border-bottom: none;
     border-radius: 8px 6px 0 0;
 
-    background-image: url("../imagenes/fondo-header.gif");
+    background-image: url("../imagenes/fondo3.gif");
     background-size: cover;
-    background-position: center 60%;
+    background-position: center 22%;
 }
 
 h1{
