@@ -47,11 +47,15 @@ main{
 }
 
 header{
-    min-height: 180px;
+    height: 180px;
     width: 100%;
     border: 3px solid #4f46e5;
     border-bottom: none;
     border-radius: 8px 6px 0 0;
+
+    background-image: url("../imagenes/fondo-header.gif");
+    background-size: cover;
+    background-position: center 60%;
 }
 
 h1{
