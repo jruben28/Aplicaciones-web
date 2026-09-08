@@ -34,7 +34,6 @@ body{
 main{
     position: relative;
     width: 55vw;
-    height: 100vh; /* Temporal, para cuando tenga el conteniod borrarlo para que se adapte a el*/
     min-width: 800px;
     display: flex;
     justify-content: center;
@@ -122,14 +121,16 @@ section{
     display: flex;
     flex-direction: column;
     height: fit-content;
+
 }
 
 .tarjeta-sidebar{
-    min-height: 200px;
+    min-height: 100px;
     background-color: #f5f3ff;
     border: 2px solid #a78bfa;
     border-radius: 4px;
-    box-shadow: 3px 3px 3px #c7d2fe;
+    box-shadow: 3px 3px 2px #c7d2fe;
+    margin-bottom: 20px;
 }
 
 .tarjeta-principal{
@@ -137,7 +138,8 @@ section{
     background-color: #f5f3ff;
     border: 2px solid #ddd6fe;
     border-radius: 4px;
-    box-shadow: 3px 3px 3px #c7d2fe;
+    box-shadow: 3px 3px 2px #c7d2fe;
+    margin-bottom: 30px;
 }
 
 .tarjeta-principal:hover{
@@ -243,6 +245,13 @@ section{
     gap: 16px;
 }
 
+#gif-bubbles{
+    object-fit: cover;
+    width: 100%;
+    max-height: 300px;
+    object-position: center;
+}
+
 .tarjeta-body p{
     font-size: 16px;
     font-family: Rubik-Regular;
@@ -254,4 +263,90 @@ section{
     border-top: 2px dashed #ddd6fe;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+h4{
+    font-family: "PressStart2p-Regular", "Copperplate Gothic Light", Arial;
+    font-size: 14px;
+    font-weight: normal;
+    color: #6b21a8;
+    margin-bottom: 8px;
+}
+
+.tag{
+    background-color: #ede9fe;
+    border: 2px solid #c4b5fd;
+    padding: 8px;
+    border-radius: 20px;
+    color: #9333ea;
+    font-family: Rubik-Regular;
+    font-size: 12px;
+}
+
+.lista-stack{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+footer{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 2px dashed #4f46e5;
+    background-color: #eef2ff;
+    height: 120px;
+    width: 55vw;
+    min-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+footer p{
+    font-size: 16px;
+    font-family: "PressStart2p-Regular", "Copperplate Gothic Light", Arial;
+    color: #9333ea;
+}
+
+#gif-eevee{
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    object-position: center;
+}
+
+.contenedor-tags{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 5px;
+    justify-content: center;
+}
+
+.tarjeta-libro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8b5cf6;
+    font-family: Rubik-Regular;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+
+.proyecto{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 2px dashed #a78bfa;
+}
+
+.proyecto:last-child{
+    border-bottom: none;
 }
