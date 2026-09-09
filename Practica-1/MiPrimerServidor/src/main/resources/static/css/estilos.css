@@ -380,3 +380,7 @@ footer p{
     height: 330px;
     object-position: center 35%;
 }
+
+em{
+    color: #d946ef;
+}
