@@ -361,3 +361,22 @@ footer p{
     height: 150px;
     object-position: center;
 }
+
+.section-acerca-de{
+    display: flex;
+    min-height: 100vh;
+}
+
+.contenedor-acerca-de{
+    height: 100%;
+    width: 100%;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#gif-kinger{
+    object-fit: cover;
+    width: 100%;
+    height: 330px;
+    object-position: center 35%;
+}
