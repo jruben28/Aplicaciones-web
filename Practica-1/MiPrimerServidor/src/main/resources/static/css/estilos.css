@@ -373,7 +373,7 @@ footer{
     margin-bottom: 50px;
     border: 2px dashed #4f46e5;
     background-color: #eef2ff;
-    height: 120px;
+    height: 140px;
     width: 55vw;
     min-width: 800px;
     display: flex;
@@ -382,16 +382,23 @@ footer{
     flex-direction: column;
 }
 
-.footer-titulo{
-    border-top: 2px dashed #ddd6fe;
-    margin-left: 20px;
-    margin-right: 20px;
+.footer-contenedor{
     width: 100%;
-    height: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 10px;
+    border-top: 2px dashed #ddd6fe;
+    font-family: Rubik-Regular;
+    color: #5b21b6;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
-footer p{
+.footer-anchor{
+    color: #d946ef;
+    font-family: Rubik-Regular;
+    text-decoration: underline;
     font-size: 16px;
-    font-family: "PressStart2p-Regular", "Copperplate Gothic Light", Arial;
-    color: #9333ea;
+    padding: 0;
 }
