@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nébula Music - Iniciar Sesión</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <main class="auth-container">
+        <section class="auth-card">
+            <form method="post" action="/autentication" enctype="application/x-www-form-urlencoded">
+                <h1>Inicio de sesion</h1>
+                <div>
+                    <label for="correo">
+                        Correo electrónico:
+                    </label>
+                    <input type="email"
+                           id="correo"
+                           name="correo"
+                           placeholder="correo@correo.com"
+                           required
+                           minlength="5"
+                           maxlength="100"
+                    >
+                </div>
+                <div>
+                    <label for="contrasena">
+                        Contraseña:
+                    </label>
+                    <input
+                            id="contrasena"
+                            name="contrasena"
+                            type="password"
+                            placeholder="********"
+                            required
+                    >
+                </div>
+                <div>
+                    <button type="submit">
+                        Iniciar sesión
+                    </button>
+                    <button type="reset">
+                        Limpiar formulario
+                    </button>
+                </div>
+            </form>
+            <p>
+                ¿Aún no tienes cuenta?
+            </p>
+            <a href="registro.html">
+                Regístrate aquí.
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright Nébula 2025.</p>
+    </footer>
+
+</body>
+</html>
