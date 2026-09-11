@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+:root{
+    --fondo-main: ;
+
+}
 
 *{
     font-family: Bahnschrift, Arial, Serif;
