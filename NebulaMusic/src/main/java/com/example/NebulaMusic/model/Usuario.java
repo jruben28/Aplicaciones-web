@@ -1,0 +1,113 @@
+package com.example.NebulaMusic.model;
+
+public class Usuario {
+
+    private String nombre;
+    private String correo;
+    private String contrasena;
+    private String pseudonimo;
+    private String genero;
+    private String suscripcion;
+    private String fechaNacimiento;
+    private String terminos;
+    private String comentario;
+
+    public Usuario(String comentario, String nombre, String correo, String contrasena, String pseudonimo, String genero, String suscripcion, String fechaNacimiento, String terminos) {
+        this.comentario = comentario;
+        this.nombre = nombre;
+        this.correo = correo;
+        this.contrasena = contrasena;
+        this.pseudonimo = pseudonimo;
+        this.genero = genero;
+        this.suscripcion = suscripcion;
+        this.fechaNacimiento = fechaNacimiento;
+        this.terminos = terminos;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getPseudonimo() {
+        return pseudonimo;
+    }
+
+    public void setPseudonimo(String pseudonimo) {
+        this.pseudonimo = pseudonimo;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getSuscripcion() {
+        return suscripcion;
+    }
+
+    public void setSuscripcion(String suscripcion) {
+        this.suscripcion = suscripcion;
+    }
+
+    public String getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(String fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public String getTerminos() {
+        return terminos;
+    }
+
+    public void setTerminos(String terminos) {
+        this.terminos = terminos;
+    }
+
+    public String getComentario() {
+        return comentario;
+    }
+
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "nombre='" + nombre + '\'' +
+                ", correo='" + correo + '\'' +
+                ", contrasena='" + contrasena + '\'' +
+                ", pseudonimo='" + pseudonimo + '\'' +
+                ", genero='" + genero + '\'' +
+                ", suscripcion='" + suscripcion + '\'' +
+                ", fechaNacimiento='" + fechaNacimiento + '\'' +
+                ", terminos='" + terminos + '\'' +
+                ", comentario='" + comentario + '\'' +
+                '}';
+    }
+}
