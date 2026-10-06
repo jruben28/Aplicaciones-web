@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - Thymeleaf</title>
+</head>
+<body>
+    <h1 th:text="${mensajeBienvenida}">
+        Titulo h1
+    </h1>
+    <p> Hola, <span th:text="${nombreUsuario}">Usuario falso</span>, Bienvenido a la clase!</p>
+
+    <hr>
+
+    <h3>
+        Menu de navegacion
+    </h3>
+    <ul>
+        <li>
+            <a th:href="@{/saludo}">Ver saludo Dinámico y objetos implícitos</a>
+        </li>
+        <li>
+            <a th:href="@{/catalogo}">Ver catalogo de juegos</a>
+        </li>
+    </ul>
+</body>
+</html>
