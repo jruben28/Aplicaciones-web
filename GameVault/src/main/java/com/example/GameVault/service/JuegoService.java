@@ -89,5 +89,11 @@ public class JuegoService {
         }
     }
 
+    public void eliminarJuego(Long id){
+        this.juegoRepository.deleteById(id);
+    }
 
+    public Juego buscarPorId(Long id){
+        return this.juegoRepository.findById(id).orElse(null);
+    }
 }
