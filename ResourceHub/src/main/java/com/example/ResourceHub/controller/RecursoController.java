@@ -24,7 +24,7 @@ public class RecursoController {
         return recursoService.crearRecurso(recurso);
     }
 
-    //actualizacion ocmpleta
+    //actualizacion completa
     @PutMapping("/{id}")
     public Recurso actualizar(@PathVariable Long id, @RequestBody Recurso recurso){
         return recursoService.actualizar(id, recurso).orElse(null);
