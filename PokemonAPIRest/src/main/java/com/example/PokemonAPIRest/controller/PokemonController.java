@@ -2,6 +2,7 @@ package com.example.PokemonAPIRest.controller;
 
 import com.example.PokemonAPIRest.model.Pokemon;
 import com.example.PokemonAPIRest.service.PokemonService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,9 +21,13 @@ public class PokemonController {
         return pokemonService.listarTodos();
     }
 
-    @PostMapping
-    public Pokemon crear(@RequestBody Pokemon pokemon){
+    @GetMapping("/{id}")
+    public Pokemon buscarPorId(@PathVariable Long id){
+        return pokemonService.obtenerPorId(id);
+    }
 
+    @PostMapping
+    public Pokemon crear(@Valid @RequestBody Pokemon pokemon){
         return pokemonService.crearPokemon(pokemon);
     }
 

@@ -1,5 +1,7 @@
 package com.example.PokemonAPIRest.service;
 
+import com.example.PokemonAPIRest.exception.BusinessRuleException;
+import com.example.PokemonAPIRest.exception.ResourceNotFoundException;
 import com.example.PokemonAPIRest.model.Pokemon;
 import com.example.PokemonAPIRest.repository.PokemonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,10 +35,14 @@ public class PokemonService {
     }
 
     public Pokemon obtenerPorId(Long id){
-        return pokemonRepository.findById(id).orElse(null);
+        return pokemonRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("No se ha encontrado el pokemon con ese id"));
     }
 
     public Pokemon crearPokemon(Pokemon pokemon){
+        if(pokemonRepository.existByNombreIgnoreCase(pokemon.getNombre())){
+            throw new BusinessRuleException("Ya existe un pokemon con ese nombre");
+        }
+
         return pokemonRepository.save(pokemon);
     }
 
