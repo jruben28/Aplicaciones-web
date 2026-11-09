@@ -65,15 +65,9 @@ solo las tareas completadas.
 Usar filter.
 */
 const obtenerCompletadas = (lista) => {
-  const completadas = lista.filter((element) =>{
-    element.completada === true
-  });  
+  const completadas = lista.filter(tarea => tarea.completada === true);
 
-  console.log("Tareas completadas");
-  completadas.forEach(element => {
-    console.log("Tarea: ", element.nombre);
-  });
-
+  return completadas;
 };
 
 
@@ -86,7 +80,9 @@ solo las tareas pendientes.
 Usar filter.
 */
 const obtenerPendientes = (lista) => {
-  
+  const pendientes = lista.filter(tarea => tarea.completada === false);
+
+  return pendientes;
 };
 
 
@@ -97,7 +93,9 @@ solo los nombres de las tareas.
 Usar map.
 */
 const obtenerNombres = (lista) => {
-  
+  const nombreTareas = lista.map(tarea => tarea.nombre);
+
+  return nombreTareas;
 };
 
 
@@ -107,11 +105,13 @@ Crear una función que retorne
 el total de tareas.
 */
 function contarTareas(lista) {
-  
+  const cantidadTareas = lista.length;
+
+  return cantidadTareas;
 }
 
 
-// =====================================
+// ====================================
 // 3. Objeto sistema
 // =====================================
 
