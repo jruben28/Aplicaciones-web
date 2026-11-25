@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const addBtn = document.querySelector(".btn-add");
 
+    const lista = document.getElementById('taskList');
+
     const tasks = await state.fetchTask();
 
     ui.render(tasks);
@@ -23,6 +25,32 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (e.key === "Enter") {
             addBtn.click();
         }
+    });
+
+    lista.addEventListener('click', async (e)=>{
+        console.log(e.target);
+        const id = parseInt(e.target.closest('li').dataset.id);
+        
+
+        if(e.target.classList.contains('btn-delete')){
+            if(confirm('¿Estás seguro de querer eliminar el elemento?')){
+                await state.deleteTask(id);
+            }
+        }
+        else if(e.target.classList.contains('btn-edit')){
+            const task = state.tasks.find( t => t.id === id);
+            const newText = prompt('Editar tarea', task.text);
+
+            if(newText){
+                await state.editTask(id, newText);
+            }
+        }
+        else if(e.target.tagName !== 'BUTTON'){
+            await state.toggleTask(id);
+        }
+
+        ui.render(state.tasks);
+
     });
 
     
