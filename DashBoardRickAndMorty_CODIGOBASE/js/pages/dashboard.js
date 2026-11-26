@@ -113,7 +113,7 @@ export const dashboard = {
         store.state.characters.forEach(char => {
             const isFav = store.isFavorite(char.id);
             const card = document.createElement('div');
-            card.className = '.character-card';
+            card.className = 'character-card';
 
             card.innerHTML = `
                 <div class="card-image-wrapper">
@@ -163,6 +163,8 @@ export const dashboard = {
         //          - Inyectar el HTML para estado vacío (puedes ver la plantilla de vacíos en index.html o usar un div simple con clase 'empty-favorites').
         //          - Terminar la ejecución de la función.
         //
+        
+
         // TODO: 2. Si hay favoritos, vaciar favoritesList.innerHTML.
         // TODO: 3. Recorrer cada favorito de store.state.favorites.
         // TODO: 4. Crear un elemento div con clase 'fav-item' e inyectarle su estructura HTML (usa recursos/resursos.md como guía).
