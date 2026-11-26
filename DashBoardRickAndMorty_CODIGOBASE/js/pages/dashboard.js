@@ -157,7 +157,9 @@ export const dashboard = {
      * Dibuja la lista de personajes favoritos en la barra lateral.
      */
     renderFavorites() {
-        const { favoritesList } = this.elements;
+        const { favoritesList } = this.elements.favoritesList;
+
+        
         
         // TODO: 1. Si la lista store.state.favorites está vacía:
         //          - Inyectar el HTML para estado vacío (puedes ver la plantilla de vacíos en index.html o usar un div simple con clase 'empty-favorites').
